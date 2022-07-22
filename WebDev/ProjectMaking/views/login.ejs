@@ -1,0 +1,21 @@
+<h1>this is login page lavadu</br>Login</h1>
+
+<% if(messages.error){%>
+    <%= messages.error %>
+    <%}%>
+<form action="/login" method="post">
+   
+    <div>
+        <label for="name">Email</label>
+        <input type ="email" name="email" id="email" required>
+    </div>
+    </br>
+    <div>
+        <label for="password">Passwaord</label>
+        <input type ="password" name="password" id="password" required>
+    </div>
+    </br>
+    <button type="submit">Login</button>
+    </form>
+    
+    <a href="/register">Register</a>
